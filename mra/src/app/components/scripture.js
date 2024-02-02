@@ -1,4 +1,4 @@
-import styles from "./scripture.module.css"
+import styles from '../styles/scripture.module.css'
 
 export default function Scripture({children}) {
     return (
