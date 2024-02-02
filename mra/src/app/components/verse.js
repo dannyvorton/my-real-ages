@@ -1,4 +1,4 @@
-import styles from "./line.module.css"
+import styles from "./verse.module.css"
 
 export default function Verse({text}) {
     return (
