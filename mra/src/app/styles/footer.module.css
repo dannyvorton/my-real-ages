@@ -4,14 +4,8 @@
     align-items: center;
 }
 
-.gitHub {
-    padding: 10px 10px 10px 10px;
-    border: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
-}
-
-.linkedIn {
-    padding: 10px 10px 10px 10px;
-    border: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
+.gitHub, .linkedIn {
+    padding: 10px 5px 5px 5px;
+    border: 10px 5px 5px 5px;
+    margin: 10px 5px 5px 5px;
 }
