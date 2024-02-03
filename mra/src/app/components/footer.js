@@ -16,8 +16,8 @@ export default function Footer() {
         </div>
 
         <div className={styles.socialMedia}>
-            <Link href="https://github.com/dannyvorton/my-real-age" target="_blank"><FontAwesomeIcon icon={faGithub} /></Link>
-            <Link href="https://www.linkedin.com/in/orton" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></Link>
+            <Link className={styles.gitHub} href="https://github.com/dannyvorton/my-real-age" target="_blank"><FontAwesomeIcon icon={faGithub} /></Link>
+            <Link className={styles.linkedIn} href="https://www.linkedin.com/in/orton" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></Link>
         </div>
 
         </footer>
