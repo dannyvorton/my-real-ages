@@ -6,13 +6,17 @@ import styles from '../styles/footer.module.css'
 export default function Footer() {
     return (
 
-        <footer className={styles.footer}>
+        <footer>
 
-        <div className={styles.gitHub}>
-            <Link href="https://github.com/dannyvorton/my-real-age" target="_blank"><FontAwesomeIcon icon={faGithub} /></Link>
+        <hr/>
+
+        <div className={styles.disclaimer}>
+            My Real Age is not affiliated with any church or religious organization. <br/>
+            Danny Orton &copy;{new Date().getFullYear()} <br/>
         </div>
 
-        <div className={styles.linkedIn}>
+        <div className={styles.socialMedia}>
+            <Link href="https://github.com/dannyvorton/my-real-age" target="_blank"><FontAwesomeIcon icon={faGithub} /></Link>
             <Link href="https://www.linkedin.com/in/orton" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></Link>
         </div>
 
