@@ -1,6 +1,9 @@
 import styles from '../styles/age.module.css'
 
 export default function Age() {
+
+    let today = new Date().toUTCString()
+
     return (
 
     <form className={styles.datePicker}>
