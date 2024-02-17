@@ -32,8 +32,8 @@ export default function Age() {
         <input className={styles.deathDatePicker} type='date' defaultValue={today} onChange={e=>setDeathDate(e.target.value)} />
 
         <h2 className={styles.headers}>My real age is</h2>
-        <p>{dayDiff}</p> <br/>
-        <p>{secondDiff}</p>
+        <output className='time'>{dayDiff}</output> <br/>
+        <output className='time'>{secondDiff}</output>
 
     </form>
 

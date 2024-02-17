@@ -8,3 +8,9 @@
 .headers {
     padding-top: 15px;
 }
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
