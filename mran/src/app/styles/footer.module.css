@@ -1,0 +1,22 @@
+.disclaimer {
+    font-size: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 5px 5px 5px;
+    border: 3px 5px 5px 5px;
+    margin: 3px 5px 5px 5px;
+}
+
+.gitHub {
+    padding-right: 3px;
+}
+
+.linkedIn {
+    padding-left: 3px
+}
