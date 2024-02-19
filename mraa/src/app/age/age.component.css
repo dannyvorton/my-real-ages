@@ -1,7 +1,13 @@
-form {
+h2 {
     text-align: center;
 }
 
-h3 {
-    padding-top: 20px;
+form {
+    text-align: center;
+    font-size: large;
+}
+
+div {
+    text-align: center;
+    font-size: large;
 }
