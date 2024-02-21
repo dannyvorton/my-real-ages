@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 
-const currentYear = new Date().getFullYear()
-
 @Component({
   selector: 'app-footer',
   standalone: true,
