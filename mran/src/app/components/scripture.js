@@ -4,7 +4,7 @@ import styles from "@/app/styles/scripture.module.css";
 export default function Scripture() {
     return (
 
-        <fragment className={styles.font}>
+        <div className={styles.font}>
 
             <blockquote>
                 For a thousand years in thy sight are but as yesterday when <br/>
@@ -30,7 +30,7 @@ export default function Scripture() {
                 <Link href="https://www.churchofjesuschrist.org/study/scriptures/pgp/abr/3?lang=eng#p4" target="_blank">Abaraham 3:4</Link>
             </blockquote>
 
-        </fragment>
+        </div>
 
     );
 }
