@@ -10,7 +10,7 @@ export default function Footer() {
 
         <footer className={styles.footer}>
             <hr/>
-            My Real Age is not affiliated with any church or religious organization.
+            My Real Ages is not affiliated with any church or religious organization.
             <br/>
             Danny Orton &copy;{ currentYear }
             <br/>

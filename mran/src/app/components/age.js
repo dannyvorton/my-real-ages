@@ -10,7 +10,7 @@ export default function Age() {
 
         <div>
 
-            <h2 className={sytles.ageH2}>Enter Dates To Learn Your Real Age</h2>
+            <h2 className={sytles.ageH2}>Enter Dates To Learn Your Real Ages</h2>
 
             <form className={sytles.ageForm}>
                 <label>
@@ -21,7 +21,7 @@ export default function Age() {
                 </label>
             </form>
 
-            <h2 className={sytles.ageH2}>Your Real Age Is</h2>
+            <h2 className={sytles.ageH2}>Your Real Ages Are</h2>
 
             <div className={sytles.ageOutput}>
                 <output>
