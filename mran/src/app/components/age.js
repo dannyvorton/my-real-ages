@@ -1,6 +1,11 @@
+//import { useState } from "react";
 import sytles from "@/app/styles/age.module.css";
 
 export default function Age() {
+
+    const currentDate = new Date().toISOString().split("T")[0];
+    const deathDate = new Date().toISOString().split("T")[0];
+
     return (
 
         <div>
