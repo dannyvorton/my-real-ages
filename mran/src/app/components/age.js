@@ -25,7 +25,8 @@ export default function Age() {
 
             <div className={sytles.ageOutput}>
                 <output>
-                    x hours x minutes x seconds
+                    Earth Age: x years x months x days
+                    Heaven Age: x minutes x seconds
                 </output>
             </div>
 
