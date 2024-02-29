@@ -3,8 +3,12 @@ import sytles from "@/app/styles/age.module.css";
 
 export default function Age() {
 
-    const currentDate = new Date().toISOString().split("T")[0];
-    const deathDate = new Date().toISOString().split("T")[0];
+    const date = new Date();
+    const formattedDate = date.toLocaleDateString('en-US', {
+        month: "2-digit",
+        day: "2-digit",
+        year: "numeric"
+    });
 
     return (
 
@@ -14,10 +18,10 @@ export default function Age() {
 
             <form className={sytles.ageForm}>
                 <label>
-                    Birth Date: <input type="date" id="datePicker" name="birthDate"/>
+                    Birth Date: <input type="date" name="birthDate"/>
                     <br/>
                     <br/>
-                    Death Date: <input type="date" id="datePicker" name="birthDate"/>
+                    Death Date: <input type="date" name="deathDate"/>
                 </label>
             </form>
 
