@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "My Real Ages",
-  description: "Do you ever wonder how old you are? Wonder no longer!",
+  description: "Do you ever wonder how old you really are? Wonder no longer!",
 };
 
 export default function RootLayout({
