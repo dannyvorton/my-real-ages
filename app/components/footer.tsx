@@ -7,7 +7,7 @@ export default function Footer() {
 
     <footer className="border-t border-black p-5 text-center text-base">
 
-      <p>My Real Ages, is not affiliated with any church or religious organization.</p>
+      <p>My Real Ages is not affiliated with any church or religious organization.</p>
       <p>Danny Orton</p>
 
       <div className="flex space-x-1 justify-center p-1">
