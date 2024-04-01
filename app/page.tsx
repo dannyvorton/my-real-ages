@@ -1,5 +1,6 @@
 import Header from "./components/header";
 import Scripture from "./components/scripture";
+import Ages from "./components/ages";
 import Footer from "./components/footer";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <>
       <Header/>
       <Scripture/>
+      <Ages/>
       <Footer/>
     </>
   );
