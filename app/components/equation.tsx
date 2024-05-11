@@ -20,7 +20,7 @@ export default function Equation() {
 
     <h3 className="text-3xl text-center p-3">Time Conversion</h3>
 
-    <div className="grid grid-rows-2 gap-2">
+    <div className="grid grid-rows-2 gap-1">
         <output className="text-xl text-center"><strong>Heaven:</strong> hrs {hH}, min {hM}, sec {hS}</output>
         <output className="text-xl text-center"><strong>Earth:</strong> hrs {eH}, min {eM}, sec {eS}</output>
     </div>

@@ -36,19 +36,19 @@ export default function Ages() {
 
       <div className="grid grid-cols-2 gap-2">
         <div className="text-xl text-right">Current or Death Date:</div>
-        <div className="text-xl text-left"><input type="date" defaultValue={death}/></div>
+        <div className="text-xl text-left"><input className="text-xl text-left" type="date" defaultValue={death}/></div>
       </div>
 
       <h3 className="text-3xl text-center p-3">My Real Ages Are:</h3>
 
       <div className="grid grid-cols-2 gap-2">
-        <div className="text-xl text-right">Earth Age:</div>
-        <div className="text-xl text-left"><output>{years} yrs, {months} mos, {diffDays} dys</output></div>
+        <p className="text-xl text-right">Earth Age:</p>
+        <output className="text-xl text-left">{years} yrs, {months} mos, {diffDays} dys</output>
       </div>
 
       <div className="grid grid-cols-2 gap-2">
-        <div className="text-xl text-right">Heaven Age:</div>
-        <div className="text-xl text-left"><output>hrs, min, sec</output></div>
+        <p className="text-xl text-right">Heaven Age:</p>
+        <output className="text-xl text-left">hrs, min, sec</output>
       </div>
     </>
 
