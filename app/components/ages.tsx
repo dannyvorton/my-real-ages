@@ -13,6 +13,15 @@ export default function Ages() {
   let [birth, setBirth]: any = useState(today);
   let [death, setDeath]: any = useState(today);
 
+  let startDate = new Date(birth);
+  let endDate = new Date(death);
+
+  let earthDiff: number = Math.floor(endDate.getTime() - startDate.getTime());
+  let diffDay: number = 1000 * 60 * 60 * 24;
+  let diffDays: number = Math.floor(earthDiff / diffDay);
+  let months: number = Math.floor(diffDays / 31);
+  let years: number = Math.floor(months / 12);
+
   return (
 
     <>
@@ -32,7 +41,7 @@ export default function Ages() {
 
       <div className="grid grid-cols-2 gap-2">
         <div className="text-xl text-right">Earth Age:</div>
-        <div className="text-xl text-left">yrs, mos, dys</div>
+        <div className="text-xl text-left">{years} yrs, {months} mos, {diffDays} dys</div>
       </div>
 
       <div className="grid grid-cols-2 gap-2">
