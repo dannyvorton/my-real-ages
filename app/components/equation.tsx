@@ -1,18 +1,23 @@
 export default function Equation() {
 
-  const heavenHours: number = 24;
-  const hH: string = heavenHours.toLocaleString();
-  const heavenMinutes: number = heavenHours * 60;
-  const hM: string = heavenMinutes.toLocaleString();
-  const heavenSeconds: number = heavenMinutes * 60;
-  const hS: string = heavenSeconds.toLocaleString();
+  const earthDay: number = 1;
+  const earthMonth: number = 1;
+  const earthYear: number = 1;
 
-  const earthHours: number = heavenHours * 365 * 1000;
-  const eH: string = earthHours.toLocaleString();
-  const earthMinutes: number = heavenMinutes * 365 * 1000;
-  const eM: string = earthMinutes.toLocaleString();
-  const earthSeconds: number = heavenSeconds * 365 * 1000;
-  const eS: string = earthSeconds.toLocaleString();
+  const heavenDay: number = (60 * 60 * 24) * .001;
+  const heavenDaySeconds: number = (heavenDay % 60);
+  const heavenDayMinutes: number = Math.floor((heavenDay - heavenDaySeconds) / 60);
+  const heavenDayHours: number = Math.floor((heavenDay - heavenDaySeconds - heavenDayMinutes) / 24);
+
+  const heavenMonth: number = heavenDay * 30.4167;
+  const heavenMonthSeconds: number = (heavenMonth % 60);
+  const heavenMonthMinutes: number = Math.floor((heavenMonth / 60) * .001);
+  const heavenDayMonth: number = Math.floor(heavenMonth / 24);
+
+  const heavenYear: number = heavenDay * 365;
+  const heavenYearSeconds: number = (heavenYear % 60);
+  const heavenYearMinutes: number = Math.floor(heavenYear / 60);
+  const heavenYearMonth: number = Math.floor(heavenYear / 24);
 
   return (
 
@@ -21,8 +26,9 @@ export default function Equation() {
     <h3 className="text-3xl text-center p-3">Time Conversion</h3>
 
     <div className="grid grid-rows-2 gap-1">
-        <output className="text-xl text-center"><strong>Heaven:</strong> hrs {hH}, min {hM}, sec {hS}</output>
-        <output className="text-xl text-center"><strong>Earth:</strong> hrs {eH}, min {eM}, sec {eS}</output>
+      <output className="text-xl text-center">{earthDay} day on earth = {heavenDayHours} hours, {heavenDayMinutes} minute, {Math.round(heavenDaySeconds)} seconds in heaven.</output>
+      <output className="text-xl text-center">{earthMonth} month on earth = {heavenDayMonth} hours, {heavenMonthMinutes} minutes, {Math.round(heavenMonthSeconds)} seconds in heaven. </output>
+      <output className="text-xl text-center">{earthYear} year on earth = {heavenYearMonth} hours, {heavenYearMinutes} minutes, {Math.round(heavenYearSeconds)} seconds in heaven.</output>
     </div>
     
     </>
