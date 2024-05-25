@@ -35,10 +35,29 @@ export default function Equation() {
 
       <h3 className="text-3xl text-center p-3">Time Conversion</h3>
 
-      <div className="grid grid-rows-2 gap-1">
-        <output className="text-xl text-center">{earthDay} day on earth = {heavenDayHours} hours, {heavenDayMinutes} minutes, {Math.floor(heavenDaySeconds)} seconds in heaven.</output>
-        <output className="text-xl text-center">{earthMonth} month on earth = {heavenMonthHours} hours, {heavenMonthMinutes} minutes, {Math.floor(heavenMonthSeconds)} seconds in heaven.</output>
-        <output className="text-xl text-center">{earthYear} year on earth = {heavenYearHours} hours, {heavenYearMinutes} minutes, {Math.floor(heavenYearSeconds)} seconds in heaven.</output>
+      <div className="grid grid-rows-3 text-xl text-center">
+
+        <div>
+          <output>{earthDay} day on earth <strong>= </strong></output>
+          <output>{heavenDayHours} hours, </output>
+          <output>{heavenDayMinutes} minutes, </output>
+          <output>{Math.floor(heavenDaySeconds)} seconds in heaven.</output>
+        </div>
+
+        <div>
+          <output>{earthMonth} month on earth <strong>= </strong></output>
+          <output>{heavenMonthHours} hours, </output>
+          <output>{heavenMonthMinutes} minutes, </output>
+          <output>{Math.floor(heavenMonthSeconds)} seconds in heaven.</output>
+        </div>
+
+        <div>
+          <output>{earthMonth} month on earth <strong>= </strong></output>
+          <output>{heavenMonthHours} hours, </output>
+          <output>{heavenMonthMinutes} minutes, </output>
+          <output>{Math.floor(heavenMonthSeconds)} seconds in heaven.</output>
+        </div>
+
       </div>
 
     </>
