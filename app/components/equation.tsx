@@ -52,10 +52,10 @@ export default function Equation() {
         </div>
 
         <div>
-          <output>{earthMonth} month on earth <strong>= </strong></output>
-          <output>{heavenMonthHours} hours, </output>
-          <output>{heavenMonthMinutes} minutes, </output>
-          <output>{Math.floor(heavenMonthSeconds)} seconds in heaven.</output>
+          <output>{earthYear} year on earth <strong>= </strong></output>
+          <output>{heavenYearHours} hours, </output>
+          <output>{heavenYearMinutes} minutes, </output>
+          <output>{Math.floor(heavenYearSeconds)} seconds in heaven.</output>
         </div>
 
       </div>
