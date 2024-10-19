@@ -3,15 +3,3 @@
 h1, h2 {
   text-align: center;
 }
-
-.row {
-  display: flex;
-}
-
-.column {
-  display: flex;
-}
-
-footer {
-  text-align: center;
-}
