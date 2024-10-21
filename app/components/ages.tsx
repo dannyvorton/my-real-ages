@@ -1,4 +1,5 @@
 export default function Ages() {
+
   return (
     <div className="p-4">
       <h2 className="text-2xl text-center">My Real Ages Are</h2>
