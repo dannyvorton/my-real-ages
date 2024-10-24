@@ -4,23 +4,15 @@ import { formatISO, parseISO } from "date-fns";
 import { FormEvent, useState } from "react";
 
 export default function Dates() {
-  /*const current = new Date(); //no need to add typescript on implied types
-  const year = current.getFullYear();
-  const month = String(current.getMonth() + 1).padStart(2, "0");
-  const day = current.getDate();
-  const today = year + "-" + month + "-" + day;*/
 
   const today = formatISO(new Date());
   const initDate = formatISO(new Date("1975-01-01"));
   const DAYS_IN_YEARS = 365.2422;
 
-  const [birth, setBirth] = useState<string>(initDate); //-<State setter name(s) for appropriately named.
-  //need you use event from input 'e'
-
+  const [birth, setBirth] = useState<string>(initDate);
   const [death, setDeath] = useState<string>(today);
 
-  const earthSeconds =
-    (parseISO(death).getTime() - parseISO(birth).getTime()) / 1000;
+  const earthSeconds = (parseISO(death).getTime() - parseISO(birth).getTime()) / 1000;
   const earthDays = earthSeconds / 60 / 60 / 24;
 
   const earthAge = () => {
