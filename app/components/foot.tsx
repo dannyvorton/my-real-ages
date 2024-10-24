@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Foot() {
 
-  const year: any = new Date();
+  const year = new Date();
   const getYear = year.getFullYear();
 
   return (
