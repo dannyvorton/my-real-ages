@@ -1,32 +1,33 @@
 "use client";
 
-import { formatISO, parseISO } from "date-fns";
 import { FormEvent, useState } from "react";
+import { formatISO, parseISO, format } from "date-fns";
 
 export default function Dates() {
 
   const today = formatISO(new Date());
-  const initDate = formatISO(new Date("1975-01-01"));
+  const initDate = format(parseISO(today), "yyyy-MM-dd");
   const DAYS_IN_YEARS = 365.2422;
 
   const [birth, setBirth] = useState<string>(initDate);
-  const [death, setDeath] = useState<string>(today);
+  const [death, setDeath] = useState<string>(initDate);
 
   const earthSeconds = (parseISO(death).getTime() - parseISO(birth).getTime()) / 1000;
   const earthDays = earthSeconds / 60 / 60 / 24;
 
   const earthAge = () => {
     const years = Math.floor(earthDays / DAYS_IN_YEARS);
-    return `${years} year(s), ${Math.round(earthDays % DAYS_IN_YEARS)} day(s)`;
+    return `${years} year(s),
+            ${Math.floor(earthDays % DAYS_IN_YEARS)} day(s)`;
   };
 
   const heavenAge = () => {
     const seconds = earthSeconds / 1000 / DAYS_IN_YEARS;
     const hours = Math.floor(seconds / 3600);
     const minutes = Math.floor((seconds % 3600) / 60);
-    return `${hours} hour(s), ${minutes} minutes(s), ${Math.round(
-      seconds % 60
-    )} seconds(s)`;
+    return `${hours} hour(s),
+            ${minutes} minutes(s),
+            ${Math.round(seconds % 60)} seconds(s)`;
   };
 
   const handleBirth = (e: FormEvent<HTMLInputElement>) => {
