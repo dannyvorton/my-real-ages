@@ -8,7 +8,6 @@ export default function Dates() {
   const today = formatISO(new Date());
   const initDate = format(parseISO(today), "yyyy-MM-dd");
   const DAYS_IN_YEARS = 365.2422;
-  const DAYS_IN_MONTHS = 30.42;
 
   const [birth, setBirth] = useState<string>(initDate);
   const [death, setDeath] = useState<string>(initDate);
