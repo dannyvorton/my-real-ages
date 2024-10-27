@@ -44,7 +44,7 @@ export default function Dates() {
       <div className="p-4">
         <h2 className="text-2xl text-center">Enter Dates For Your Real Ages</h2>
         <div className="grid grid-cols-2 gap-4 p-2">
-          <p className="text-right">Enter birth date:</p>
+          <p className="text-right">Birth date:</p>
           <span>
             <input
               className="text-black"
@@ -55,7 +55,7 @@ export default function Dates() {
           </span>
         </div>
         <div className="grid grid-cols-2 gap-4">
-          <p className="text-right">Enter death or current date:</p>
+          <p className="text-right">Current or death date:</p>
           <span>
             <input
               className="text-black"
