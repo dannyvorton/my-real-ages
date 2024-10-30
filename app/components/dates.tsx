@@ -40,47 +40,47 @@ export default function Dates() {
   };
 
   return (
-    <>
-      <div className="p-4">
-        <h2 className="text-2xl text-center">Enter Dates For Your Real Ages</h2>
-        <div className="grid grid-cols-2 gap-4 p-2">
-          <p className="text-right">Birth date:</p>
-          <span>
+      <>
+        <div className="p-4">
+          <h2 className="text-2xl text-center">Enter Dates For Your Real Ages</h2>
+          <div className="grid grid-cols-2 gap-4 p-2">
+            <p className="text-right">Birth date:</p>
+            <span>
             <input
-              className="text-black"
-              type="date"
-              value={birth}
-              onChange={handleBirth}
+                className="text-black"
+                type="date"
+                value={birth}
+                onChange={handleBirth}
             />
           </span>
-        </div>
-        <div className="grid grid-cols-2 gap-4">
-          <p className="text-right">Current or death date:</p>
-          <span>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <p className="text-right">Current or death date:</p>
+            <span>
             <input
-              className="text-black"
-              type="date"
-              value={death}
-              onChange={handleDeath}
+                className="text-black"
+                type="date"
+                value={death}
+                onChange={handleDeath}
             />
           </span>
+          </div>
         </div>
-      </div>
-      {/**
-       * Combined dates and ages into one component because birth and death need to be used on
-       * both. A parent component can be created and birth and death can be passed down.
-       */}
-      <div className="p-4">
-        <h2 className="text-2xl text-center">My Real Ages Are</h2>
-        <div className="grid grid-cols-2 gap-4 p-2">
-          <p className="text-right">My earth age is:</p>
-          <p className="text-left">{earthAge()}</p>
+        {/**
+         * Combined dates and ages into one component because birth and death need to be used on
+         * both. A parent component can be created and birth and death can be passed down.
+         */}
+        <div className="p-4">
+          <h2 className="text-2xl text-center">My Real Ages Are</h2>
+          <div className="grid grid-cols-2 gap-4 p-2">
+            <p className="text-right">My earth age is:</p>
+            <p className="text-left">{earthAge()}</p>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <p className="text-right">My heaven age is:</p>
+            <p className="text-left">{heavenAge()}</p>
+          </div>
         </div>
-        <div className="grid grid-cols-2 gap-4">
-          <p className="text-right">My heaven age is:</p>
-          <p className="text-left">{heavenAge()}</p>
-        </div>
-      </div>
-    </>
+      </>
   );
 }
