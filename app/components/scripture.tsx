@@ -9,7 +9,7 @@ export default function Scripture() {
         <Link
           href="https://www.churchofjesuschrist.org/study/scriptures/ot/ps/90?lang=eng"
           target="_blank"
-          className="hover:italic"
+          className="underline hover:italic"
         >Psalm 90:4</Link>
       </article>
       <article>
@@ -19,7 +19,7 @@ export default function Scripture() {
         <Link
           href="https://www.churchofjesuschrist.org/study/scriptures/nt/2-pet/3?lang=eng"
           target="_blank"
-          className="hover:italic"
+          className="underline hover:italic"
         >2 Peter 3:8</Link>
       </article>
       <article>
@@ -34,7 +34,7 @@ export default function Scripture() {
         <Link
           href="https://www.churchofjesuschrist.org/study/scriptures/pgp/abr/3?lang=eng"
           target="_blank"
-          className="hover:italic"
+          className="underline hover:italic"
         >Abraham 3:4</Link>
       </article>
     </div>
