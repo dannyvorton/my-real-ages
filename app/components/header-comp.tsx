@@ -1,4 +1,4 @@
-export default function Head() {
+export default function HeaderComp() {
   return (
     <h1 className="text-4xl text-center pt-4">My Real Ages</h1>
   );

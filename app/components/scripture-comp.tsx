@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Scripture() {
+export default function ScriptureComp() {
   return (
     <div className="grid justify-center p-4 gap-y-4">
       <article>

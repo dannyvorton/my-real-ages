@@ -11,7 +11,7 @@ import {
   differenceInDays
 } from "date-fns";
 
-export default function Dates() {
+export default function DateComp() {
 
   const today = formatISO(new Date(), {representation: "date"});
   const [birth, setBirth] = useState<string>(today);

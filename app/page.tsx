@@ -1,15 +1,15 @@
-import Head from "./components/head";
-import Scripture from "./components/scripture";
-import Dates from "./components/dates";
-import Foot from "./components/foot";
+import HeaderComp from "./components/header-comp";
+import ScriptureComp from "./components/scripture-comp";
+import DateComp from "./components/date-comp";
+import FooterComp from "./components/footer-comp";
 
 export default function Home() {
   return (
     <>
-      <Head />
-      <Scripture />
-      <Dates />
-      <Foot />
+      <HeaderComp />
+      <ScriptureComp />
+      <DateComp />
+      <FooterComp />
     </>
   );
 }

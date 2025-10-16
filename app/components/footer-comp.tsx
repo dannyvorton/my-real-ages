@@ -2,7 +2,7 @@ import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-export default function Foot() {
+export default function FooterComp() {
 
   const currentYear = new Date().getFullYear();
 
