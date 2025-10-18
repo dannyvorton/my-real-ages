@@ -26,7 +26,7 @@ export default function DateComp() {
 
   const earthAge = () => {
     const years = differenceInYears(death, birth);
-    const adjustedYears =  addYears(birth, years);
+    const adjustedYears = addYears(birth, years);
     const months = differenceInMonths(death, adjustedYears);
     const adjustedMonths = addMonths(adjustedYears, months);
     const days = differenceInDays(death, adjustedMonths);
