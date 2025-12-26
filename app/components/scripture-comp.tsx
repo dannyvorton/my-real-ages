@@ -2,14 +2,13 @@ import Link from "next/link";
 
 export default function ScriptureComp() {
   return (
-    <div className="grid justify-center p-4 gap-y-4">
+    <div>
       <article>
         For a thousand years in thy sight are but as yesterday when <br className="hidden sm:inline"/>
         it is past, and as a watch in the night. <br/>
         <Link
           href="https://www.churchofjesuschrist.org/study/scriptures/ot/ps/90?lang=eng"
           target="_blank"
-          className="underline hover:italic"
         >Psalm 90:4</Link>
       </article>
       <article>
@@ -19,7 +18,6 @@ export default function ScriptureComp() {
         <Link
           href="https://www.churchofjesuschrist.org/study/scriptures/nt/2-pet/3?lang=eng"
           target="_blank"
-          className="underline hover:italic"
         >2 Peter 3:8</Link>
       </article>
       <article>
@@ -34,7 +32,6 @@ export default function ScriptureComp() {
         <Link
           href="https://www.churchofjesuschrist.org/study/scriptures/pgp/abr/3?lang=eng"
           target="_blank"
-          className="underline hover:italic"
         >Abraham 3:4</Link>
       </article>
     </div>
