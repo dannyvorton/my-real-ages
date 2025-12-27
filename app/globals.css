@@ -32,12 +32,12 @@ a:hover {
   align-items: center;
 }
 
-.date-container {
+.date {
   display: flex;
   flex-direction: row;
 }
 
-.category-container {
+.date-category {
   display: flex;
   flex-direction: row;
   width: 50%;
@@ -48,9 +48,18 @@ a:hover {
   padding: 5px;
 }
 
-.calendar-container {
+.date-calendar {
   display: flex;
   flex-direction: row;
+  width: 50%;
+  float: right;
+  justify-content: left;
+  align-items: left;
+  margin: 5px;
+  padding: 5px;
+}
+
+.date-age {
   width: 50%;
   float: right;
   justify-content: left;
