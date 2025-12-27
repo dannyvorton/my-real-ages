@@ -5,8 +5,8 @@ h1, h2 {
 article {
   padding: 5px;
   margin: 5px;
-  width: 475px;
   text-align: left;
+  float: center;
 }
 
 footer {
@@ -28,8 +28,6 @@ a:hover {
 .scripture-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .date {
