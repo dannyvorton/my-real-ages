@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function ScriptureComp() {
   return (
-    <div>
+    <div className="scripture-container">
       <article>
         For a thousand years in thy sight are but as yesterday when <br/>
         it is past, and as a watch in the night. <br/>
