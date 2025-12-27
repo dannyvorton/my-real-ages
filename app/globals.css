@@ -31,3 +31,30 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
+
+.date-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.category-container {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  float: left;
+  justify-content: right;
+  align-items: right;
+  margin: 5px;
+  padding: 5px;
+}
+
+.calendar-container {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  float: right;
+  justify-content: left;
+  align-items: left;
+  margin: 5px;
+  padding: 5px;
+}

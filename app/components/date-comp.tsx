@@ -58,15 +58,15 @@ export default function DateComp() {
     <>
       <div>
         <h2>Enter Dates For Your Real Ages</h2>
-          <div>
-            <p>Birth date:</p>
-            <div>
+          <div className="date-container">
+            <p className="category-container">Birth date:</p>
+            <div className="calendar-container">
               <input type="date" value={ birth } onChange={ handleBirth } />
             </div>
           </div>
-          <div>
-            <p>Current or death date:</p>
-            <div>
+          <div className="date-container">
+            <p className="category-container">Current or death date:</p>
+            <div className="calendar-container">
               <input type="date" value={ death } onChange={ handleDeath } />
             </div>
           </div>
