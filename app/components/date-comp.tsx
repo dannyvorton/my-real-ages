@@ -58,38 +58,34 @@ export default function DateComp() {
     <>
       <div>
         <h2>Enter Dates For Your Real Ages</h2>
-        <div>
-        <p>Birth date:</p>
-        <span>
-          <input
-            type="date"
-            value={ birth }
-            onChange={ handleBirth }
-          />
-        </span>
-      </div>
-      <div>
-        <p>Current or death date:</p>
-        <span>
-          <input
-            type="date"
-            value={ death }
-            onChange={ handleDeath }
-          />
-        </span>
-        </div>
+          <div>
+            <p>Birth date:</p>
+            <div>
+              <input type="date" value={ birth } onChange={ handleBirth } />
+            </div>
+          </div>
+          <div>
+            <p>Current or death date:</p>
+            <div>
+              <input type="date" value={ death } onChange={ handleDeath } />
+            </div>
+          </div>
       </div>
 
       <div>
         <h2>My Real Ages Are</h2>
-        <div>
-          <p>My earth age is:</p>
-          <div>{ earthAge() }</div>
-        </div>
-        <div>
-          <p>My heaven age is:</p>
-          <div>{ heavenAge() }</div>
-        </div>
+          <div>
+            <p>My earth age is:</p>
+            <div>
+              { earthAge() }
+            </div>
+          </div>
+          <div>
+            <p>My heaven age is:</p>
+            <div>
+              { heavenAge() }
+            </div>
+          </div>
       </div>
     </>
   );
