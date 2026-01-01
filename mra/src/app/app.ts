@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 
 import { Header } from './header/header';
 import { Scripture } from './scripture/scripture';
+import { Date } from './date/date';
 import { Footer } from './footer/footer';
 
 @Component({
@@ -11,6 +12,7 @@ import { Footer } from './footer/footer';
     RouterOutlet,
     Header,
     Scripture,
+    Date,
     Footer
   ],
   templateUrl: './app.html',

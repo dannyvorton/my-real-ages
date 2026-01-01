@@ -6,5 +6,9 @@ article {
 }
 
 a {
-  text: black;
+  color: black;
+}
+
+a:hover {
+  font-style: italic;
 }
