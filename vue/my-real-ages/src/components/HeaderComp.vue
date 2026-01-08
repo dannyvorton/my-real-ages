@@ -1,5 +1,11 @@
 <script setup></script>
 
-<template></template>
+<template>
+  <h1>My Real Ages</h1>
+</template>
 
-<style scoped></style>
+<style scoped>
+  h1 {
+    text-align: center;
+  }
+</style>
