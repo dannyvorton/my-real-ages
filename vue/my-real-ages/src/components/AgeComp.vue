@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <h2>Enter Dates For Your Real Ages</h2>
+  <h2>My Real Ages Are</h2>
 </template>
 
 <style scoped>

@@ -1,5 +1,7 @@
 <script setup></script>
 
-<template></template>
+<template>
+  <hr>
+</template>
 
 <style scoped></style>
