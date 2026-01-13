@@ -1,11 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
-import { Header } from './header/header';
-import { Scriptures } from './scriptures/scriptures';
-import { Dates } from './dates/dates';
-import { Ages } from './ages/ages';
-import { Footer } from './footer/footer';
+import { Header } from './components/header/header';
+import { Scriptures } from './components/scriptures/scriptures';
+import { Dates } from './components/dates/dates';
+import { Ages } from './components/ages/ages';
+import { Footer } from './components/footer/footer';
 
 @Component({
   selector: 'app-root',
