@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ng-icons/core": "^33.0.0",
     "date-fns": "^4.1.0",
     "my-real-ages": "file:",
     "next": "^16.0.7",
