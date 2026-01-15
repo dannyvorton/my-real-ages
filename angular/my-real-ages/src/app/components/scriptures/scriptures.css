@@ -1,0 +1,11 @@
+article {
+  padding: 10px;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  font-style: italic;
+}
