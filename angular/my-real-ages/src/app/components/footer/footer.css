@@ -1,11 +1,15 @@
-p {
-  text-align: center;
-}
-
 .foot {
   display: flex;
   justify-content: center;
   align-items: center;
   color: black;
   gap: 10px;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  color: black;
 }
