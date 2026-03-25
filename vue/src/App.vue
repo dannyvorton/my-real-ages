@@ -1,11 +1,17 @@
-<script setup></script>
+<script setup>
+import HeaderComp from "./components/HeaderComp.vue";
+import ScriptureComp from "./components/ScriptureComp.vue";
+import DateComp from "./components/DateComp.vue";
+import AgeComp from "./components/AgeComp.vue";
+import FooterComp from "./components/FooterComp.vue";
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+    <HeaderComp />
+    <ScriptureComp />
+    <DateComp />
+    <AgeComp />
+    <FooterComp />
 </template>
 
 <style scoped></style>
