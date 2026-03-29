@@ -1,17 +1,17 @@
 <script setup>
-import HeaderComp from "./components/HeaderComp.vue";
-import ScriptureComp from "./components/ScriptureComp.vue";
-import DateComp from "./components/DateComp.vue";
-import AgeComp from "./components/AgeComp.vue";
-import FooterComp from "./components/FooterComp.vue";
+import HeaderCp from "./components/HeaderCp.vue";
+import ScriptureCp from "./components/ScriptureCp.vue";
+import DateCp from "./components/DateCp.vue";
+import AgeCp from "./components/AgeCp.vue";
+import FooterCp from "./components/FooterCp.vue";
 </script>
 
 <template>
-    <HeaderComp />
-    <ScriptureComp />
-    <DateComp />
-    <AgeComp />
-    <FooterComp />
+    <HeaderCp />
+    <ScriptureCp />
+    <DateCp />
+    <AgeCp />
+    <FooterCp />
 </template>
 
 <style scoped></style>
