@@ -1,7 +1,7 @@
 // eslint.config.js
-import js from '@eslint/js'
-import pluginVue from 'eslint-plugin-vue'
-import prettier from 'eslint-config-prettier'
+import js from '@eslint/js';
+import pluginVue from 'eslint-plugin-vue';
+import prettier from 'eslint-config-prettier';
 
 export default [
   {
@@ -25,4 +25,4 @@ export default [
       'vue/multi-word-component-names': 'off',
     },
   },
-]
+];
