@@ -2,7 +2,7 @@
 
 <template>
   <header>
-    <h1>My RealAges</h1>
+    <h1>My Real Ages</h1>
   </header>
 </template>
 
