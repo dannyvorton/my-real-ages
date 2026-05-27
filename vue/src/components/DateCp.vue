@@ -31,15 +31,17 @@
   h2 {
     text-align: center;
   }
-  input {
-    width: max-content;
-  }
   .date-input {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
     gap: 10px;
   }
   .date-label {
     text-align: right;
+  }
+  input {
+    width: max-content;
+    height: max-content;
   }
 </style>
