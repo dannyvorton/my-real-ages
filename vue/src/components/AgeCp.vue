@@ -48,7 +48,7 @@
   <h2>My Real Ages Are</h2>
   <div class="real-ages">
     <div class="label">
-      <p>My earth age is:</p>
+      <p>Earth age:</p>
     </div>
     <div class="age">
       <p>{{ earthAge().years }} year(s)</p>
@@ -58,7 +58,7 @@
   </div>
   <div class="real-ages">
     <div class="label">
-      <p>My heaven age is:</p>
+      <p>Heaven age:</p>
     </div>
     <div class="age">
       <p>{{ heavenAge().hours }} hour(s)</p>
