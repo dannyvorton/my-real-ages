@@ -5,25 +5,25 @@
   });
 
   const emit = defineEmits(['update:birthDate', 'update:deathDate']);
-
-  function updateBirthDate(newBirthDate) {
-    emit('update:birthDate', newBirthDate);
-  }
-
-  function updateDeathDate(newDeathDate) {
-    emit('update:deathDate', newDeathDate);
-  }
 </script>
 
 <template>
   <h2>Enter Dates For Your Real Ages</h2>
   <div class="date-input">
     <p class="date-label">Birth date:</p>
-    <input type="date" :value="props.birthDate" @change="updateBirthDate" />
+    <input
+      type="date"
+      :value="props.birthDate"
+      @change="emit('update:birthDate', $event.target.value)"
+    />
   </div>
   <div class="date-input">
     <p class="date-label">Current or death date:</p>
-    <input type="date" :value="props.deathDate" @change="updateDeathDate" />
+    <input
+      type="date"
+      :value="props.deathDate"
+      @change="emit('update:deathDate', $event.target.value)"
+    />
   </div>
 </template>
 
