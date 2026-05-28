@@ -85,4 +85,15 @@
   .age {
     text-align: left;
   }
+  @media (max-width: 600px) {
+    .real-ages {
+      grid-template-columns: 1fr;
+    }
+    .label {
+      justify-content: center;
+    }
+    .age {
+      text-align: center;
+    }
+  }
 </style>

@@ -3,7 +3,8 @@
 <template>
   <div class="scripture">
     <article>
-      For a thousand years in thy sight are but as yesterday when <br />
+      For a thousand years in thy sight are but as yesterday when
+      <br class="mobile" />
       it is past, and as a watch in the night. <br />
       <a
         href="https://www.churchofjesuschrist.org/study/scriptures/ot/ps/90?lang=eng"
@@ -12,8 +13,10 @@
       >
     </article>
     <article>
-      But, beloved, be not ignorant of this one thing, that one day <br />
-      is with the Lord as a thousand years, and a thousand years as <br />
+      But, beloved, be not ignorant of this one thing, that one day
+      <br class="mobile" />
+      is with the Lord as a thousand years, and a thousand years as
+      <br class="mobile" />
       one day. <br />
       <a
         href="https://www.churchofjesuschrist.org/study/scriptures/nt/2-pet/3?lang=eng"
@@ -22,13 +25,20 @@
       >
     </article>
     <article>
-      And the Lord said unto me, by the Urim and Thummim, <br />
-      that Kolob was after the manner of the Lord, according to its <br />
-      times and seasons in the revolutions thereof; that one <br />
-      revolution was a day unto the Lord, after his manner of <br />
-      reckoning, it being one thousand years according to the time <br />
-      appointed unto that whereon thou standest. This is the <br />
-      reckoning of the Lord&#39;s time, according to the reckoning of <br />
+      And the Lord said unto me, by the Urim and Thummim,
+      <br class="mobile" />
+      that Kolob was after the manner of the Lord, according to its
+      <br class="mobile" />
+      times and seasons in the revolutions thereof; that one
+      <br class="mobile" />
+      revolution was a day unto the Lord, after his manner of
+      <br class="mobile" />
+      reckoning, it being one thousand years according to the time
+      <br class="mobile" />
+      appointed unto that whereon thou standest. This is the
+      <br class="mobile" />
+      reckoning of the Lord&#39;s time, according to the reckoning of
+      <br class="mobile" />
       Kolob. <br />
       <a
         href="https://www.churchofjesuschrist.org/study/scriptures/pgp/abr/3?lang=eng"
@@ -55,5 +65,13 @@
   }
   a:hover {
     font-style: italic;
+  }
+  .mobile {
+    display: none;
+  }
+  @media (min-width: 680px) {
+    .mobile {
+      display: inline;
+    }
   }
 </style>

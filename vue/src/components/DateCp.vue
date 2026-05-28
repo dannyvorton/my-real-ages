@@ -44,4 +44,13 @@
     width: max-content;
     height: max-content;
   }
+  @media (max-width: 600px) {
+    .date-input {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+    .date-label {
+      text-align: center;
+    }
+  }
 </style>
